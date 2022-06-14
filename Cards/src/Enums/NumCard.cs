@@ -2,7 +2,7 @@ namespace Cards
 {
     enum TypeCard
     {
-        As = 1,
+        Ace = 1,
         Dois = 2,
         Tres = 3,
         Quatro = 4,
@@ -12,8 +12,8 @@ namespace Cards
         Oito = 8,
         Nove = 9,
         Dez = 10,
-        Valete = 11,
-        Dama = 12,
-        Rei = 13
+        Jack = 11,
+        Quenn = 12,
+        King = 13
     }
 }
