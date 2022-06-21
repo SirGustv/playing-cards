@@ -10,6 +10,6 @@ namespace Cards
             this.Value = value;
             this.Suits = suits;
         }
-        private Card() { }
+        public Card() { }
     }
 }
