@@ -7,7 +7,41 @@ namespace Cards
         static void Main(string[] args)
         {
             Console.Clear();
-            UserOptions();
+            string userOption = UserOptions();
+
+            while (userOption.ToUpper() != "X")
+            {
+                switch (userOption)
+                {
+                    // case "1":
+                    //     ShowtAllCards();
+                    //     break;
+
+                    // case "2":
+                    //     ShowDiamonds();
+                    //     break;
+
+                    // case "3":
+                    //     ShowSpades();
+                    //     break;
+
+                    // case "4":
+                    //     ShowHearts();
+                    //     break;
+
+                    // case "5":
+                    //     ShowClubs();
+                    //     break;
+
+                    case "C":
+                        Console.Clear();
+                        break;
+
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+                userOption = UserOptions();
+            }
         }
 
         private static string UserOptions()
