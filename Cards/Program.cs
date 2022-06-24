@@ -42,6 +42,8 @@ namespace Cards
                 }
                 userOption = UserOptions();
             }
+            Console.WriteLine("Aperte uma tecla para sair!");
+            Console.ReadKey();
         }
 
         private static string UserOptions()
