@@ -1,6 +1,6 @@
 namespace Cards
 {
-    enum TypeCard
+    public enum TypeCard
     {
         Ace = 1,
         Two = 2,
