@@ -62,5 +62,18 @@ namespace Cards
             string userOption = Console.ReadLine().ToUpper();
             return userOption;
         }
+        public static void DrawColumns(string symbol, string space, int value)
+        {
+            Console.Write(symbol);
+            for (int columns = 0; columns <= value; columns++)
+                Console.Write(space);
+            Console.Write(symbol);
+            Console.Write("\n");
+        }
+        public static void DrawLines()
+        {
+            for (int lines = 0; lines < 1; lines++)
+                DrawColumns("|", " ", 36);
+        }
     }
 }
